@@ -2,16 +2,16 @@ import React from 'react';
 import emailjs from 'emailjs-com'
 function mailer(props) {
 
-    function sendEmail(e){
-        e.preventDefault();
-        emailjs.sendForm('service_kvit3yf', 'template_qzge9ug', e.target, "user_XqqdUYeoKvlwYIq9AsKmK")
-        .then(res =>{
-            console.log(res)
-        })
-        .catch(err => {
-            console.log(err);
-        })
-    }
+     function sendEmail(e){
+    //     e.preventDefault();
+    //     emailjs.sendForm('service_key', 'template_key', e.target, "user_id")
+    //     .then(res =>{
+    //         console.log(res)
+    //     })
+    //     .catch(err => {
+    //         console.log(err);
+    //     })
+     }
     return (
         <div className="container border" style={{marginTop:"50px", width:"50%", backgroundImage: `url('https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260')`, backgroundPosition:'center', backgroundSize:'cover'}}>
             <h1 style={{marginTop:'20px'}}>Contact Form</h1>
